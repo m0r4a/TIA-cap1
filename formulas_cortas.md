@@ -64,6 +64,13 @@
 
 ## Intervalos de confianza
 
+- [Para la media](#para-la-media)
+  - [Varianza conocida](#varianza-conocida)
+  - [Varanza desconocida y (n>=30)](#varianza-desconocida-n30)
+  - [Varanza desconocida y (n<30)](#varianza-desconocida-n30-1)
+- [Para la proporción](#para-la-proporción)
+- [Para la varianza](#para-la-varianza)
+
 ### Para la media
 #### Varianza conocida
 ```math
@@ -92,10 +99,27 @@
 
 ## Diferencias entre poblaciones
 
+- [Diferencia de medias](#diferencia-de-medias)
+  - [Varianzas conocidas](#varianzas-conocidas)
+  - [Varianzas desconocidas diferentes](#varianzas-desconocidas-diferentes)
+  - [Varianzas desconocidas iguales](#varianzas-desconocidas-iguales-con-δp)
+- [Razón de varianzas](#razón-de-varianzas)
+- [Diferencia de proporciones](#diferencia-de-proporciones)
+
 ### Diferencia de medias
+
 #### Varianzas conocidas
 ```math
 \Huge (\bar{x}_1 - \bar{x}_2) \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}}
+```
+
+#### Varianzas desconocidas diferentes
+```math
+\Huge (\bar{x}_1 - \bar{x}_2) \pm t_{\frac{\alpha}{2}, v}\sqrt{\frac{\delta^2_1}{n_1} + \frac{\delta^2_2}{n_2}}
+```
+donde:
+```math
+\Huge v = \frac{(\frac{\delta^2_1}{n_1} + \frac{\delta^2_2}{n_2})^2}{\frac{\frac{\delta^2_1}{n_1}}{n_1 - 1} + \frac{\frac{\delta^2_2}{n_2}}{n_2 - 1}}
 ```
 
 #### Varianzas desconocidas iguales con δp
@@ -108,15 +132,6 @@ donde:
 ```
 ```math
 \Huge v = n_1 + n_2 - 1
-```
-
-#### Varianzas desconocidas diferentes
-```math
-\Huge (\bar{x}_1 - \bar{x}_2) \pm t_{\frac{\alpha}{2}, v}\sqrt{\frac{\delta^2_1}{n_1} + \frac{\delta^2_2}{n_2}}
-```
-donde:
-```math
-\Huge v = \frac{(\frac{\delta^2_1}{n_1} + \frac{\delta^2_2}{n_2})^2}{\frac{\frac{\delta^2_1}{n_1}}{n_1 - 1} + \frac{\frac{\delta^2_2}{n_2}}{n_2 - 1}}
 ```
 
 ### Razón de varianzas
