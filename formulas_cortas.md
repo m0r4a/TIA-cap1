@@ -19,45 +19,45 @@
 ## Media
 ### Muestral
 ```math
-\bar{X} = \frac{\sum_{i=1}^{n} x_i}{n}
+\Huge \bar{X} = \frac{\sum_{i=1}^{n} x_i}{n}
 ```
 
 ### Poblacional
 ```math
-\mu = \frac{\sum x_i}{N}
+\Huge \mu = \frac{\sum x_i}{N}
 ```
 
 ## Varianza
 ### Muestral
 ```math
-\delta^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}
+\Huge \delta^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}
 ```
 
 ### Poblacional
 ```math
-\sigma^2 = \frac{\sum (x_i - \mu)^2}{N}
+\Huge \sigma^2 = \frac{\sum (x_i - \mu)^2}{N}
 ```
 
 ## Desviación estándar
 ### Muestral
 ```math
-\delta = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}}
+\Huge \delta = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}}
 ```
 
 ### Poblacional
 ```math
-\sigma = \sqrt{\frac{\sum (x_i - \mu)^2}{N}}
+\Huge \sigma = \sqrt{\frac{\sum (x_i - \mu)^2}{N}}
 ```
 
 ## Proporción
 ### Muestral
 ```math
-P = \frac{x}{n}
+\Huge P = \frac{x}{n}
 ```
 
 ### Poblacional
 ```math
-\pi = \frac{x}{N}
+\Huge \pi = \frac{x}{N}
 ```
 
 # Estimación por intervalo
@@ -67,27 +67,27 @@ P = \frac{x}{n}
 ### Para la media
 #### Varianza conocida
 ```math
-\bar{X} \pm Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}
+\Huge \bar{X} \pm Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}
 ```
 
 #### Varianza desconocida (n>30)
 ```math
-\bar{X} \pm Z_{\frac{\alpha}{2}}\frac{\delta}{\sqrt{n}}
+\Huge \bar{X} \pm Z_{\frac{\alpha}{2}}\frac{\delta}{\sqrt{n}}
 ```
 
 #### Varianza desconocida (n<30)
 ```math
-\bar{X} \pm t_{\frac{\alpha}{2}, n-1}\frac{\delta}{\sqrt{n}}
+\Huge \bar{X} \pm t_{\frac{\alpha}{2}, n-1}\frac{\delta}{\sqrt{n}}
 ```
 
 ### Para la proporción
 ```math
-\hat{p} \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+\Huge \hat{p} \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
 ```
 
 ### Para la varianza
 ```math
-\frac{(n-1)\delta^2}{\chi^2_{\frac{\alpha}{2}}} < \sigma^2 < \frac{(n-1)\delta^2}{\chi^2_{1-\frac{\alpha}{2}}}
+\Huge \frac{(n-1)\delta^2}{\chi^2_{\frac{\alpha}{2}}} < \sigma^2 < \frac{(n-1)\delta^2}{\chi^2_{1-\frac{\alpha}{2}}}
 ```
 
 ## Diferencias entre poblaciones
@@ -95,36 +95,36 @@ P = \frac{x}{n}
 ### Diferencia de medias
 #### Varianzas conocidas
 ```math
-(\bar{x}_1 - \bar{x}_2) \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}}
+\Huge (\bar{x}_1 - \bar{x}_2) \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}}
 ```
 
 #### Varianzas desconocidas iguales con δp
 ```math
-(\bar{x}_1 - \bar{x}_2) \pm t_{\frac{\alpha}{2}, v}\delta_p\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}
+\Huge (\bar{x}_1 - \bar{x}_2) \pm t_{\frac{\alpha}{2}, v}\delta_p\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}
 ```
 donde:
 ```math
-\delta_p = \sqrt{\frac{(n_1-1)\delta^2_1 + (n_2-1)\delta^2_2}{n_1 + n_2 - 1}}
+\Huge \delta_p = \sqrt{\frac{(n_1-1)\delta^2_1 + (n_2-1)\delta^2_2}{n_1 + n_2 - 1}}
 ```
 ```math
-v = n_1 + n_2 - 1
+\Huge v = n_1 + n_2 - 1
 ```
 
 #### Varianzas desconocidas diferentes
 ```math
-(\bar{x}_1 - \bar{x}_2) \pm t_{\frac{\alpha}{2}, v}\sqrt{\frac{\delta^2_1}{n_1} + \frac{\delta^2_2}{n_2}}
+\Huge (\bar{x}_1 - \bar{x}_2) \pm t_{\frac{\alpha}{2}, v}\sqrt{\frac{\delta^2_1}{n_1} + \frac{\delta^2_2}{n_2}}
 ```
 donde:
 ```math
-v = \frac{(\frac{\delta^2_1}{n_1} + \frac{\delta^2_2}{n_2})^2}{\frac{\frac{\delta^2_1}{n_1}}{n_1 - 1} + \frac{\frac{\delta^2_2}{n_2}}{n_2 - 1}}
+\Huge v = \frac{(\frac{\delta^2_1}{n_1} + \frac{\delta^2_2}{n_2})^2}{\frac{\frac{\delta^2_1}{n_1}}{n_1 - 1} + \frac{\frac{\delta^2_2}{n_2}}{n_2 - 1}}
 ```
 
 ### Razón de varianzas
 ```math
-\frac{\delta^2_1}{\delta^2_2}\frac{1}{F} < \frac{\sigma^2_1}{\sigma^2_2} < \frac{\delta^2_1}{\delta^2_2}F
+\Huge \frac{\delta^2_1}{\delta^2_2}\frac{1}{F} < \frac{\sigma^2_1}{\sigma^2_2} < \frac{\delta^2_1}{\delta^2_2}F
 ```
 
 ### Diferencia de proporciones
 ```math
-(\hat{p}_1 - \hat{p}_2) \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1} + \frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}
+\Huge (\hat{p}_1 - \hat{p}_2) \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1} + \frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}
 ```
