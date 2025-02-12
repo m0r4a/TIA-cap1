@@ -114,12 +114,17 @@
 ```
 
 #### Varianzas desconocidas diferentes
+
 ```math
 \Huge (\bar{x}_1 - \bar{x}_2) \pm t_{\frac{\alpha}{2}, v}\sqrt{\frac{\delta^2_1}{n_1} + \frac{\delta^2_2}{n_2}}
 ```
 donde:
 ```math
 \Huge v = \frac{(\frac{\delta^2_1}{n_1} + \frac{\delta^2_2}{n_2})^2}{\frac{\frac{\delta^2_1}{n_1}}{n_1 - 1} + \frac{\frac{\delta^2_2}{n_2}}{n_2 - 1}}
+```
+y:
+```math
+\Huge \delta_x^2 = \frac{\sum_{i=1}^n {(x_i - \bar x)}^2} {n-1}
 ```
 
 #### Varianzas desconocidas iguales con δp

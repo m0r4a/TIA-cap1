@@ -109,7 +109,7 @@
 ### Fórmula completa
 
 ```math
-\color{#A98AE4}\Huge \hat{p} - Z_{\frac{\alpha}{2}}.\sqrt{\frac{\hat{p} (1-\hat{p})}{n}} < p < \hat{p} + t_{\frac{\alpha}{2}} .\sqrt{\frac{\hat{p} (1-\hat{p})}{n}}
+\color{#A98AE4}\Huge \hat{p} - Z_{\frac{\alpha}{2}}.\sqrt{\frac{\hat{p} (1-\hat{p})}{n}} < p < \hat{p} + Z_{\frac{\alpha}{2}} .\sqrt{\frac{\hat{p} (1-\hat{p})}{n}}
 ```
 
 ## Varianza de una población
@@ -131,6 +131,12 @@
 ```
 
 ## Diferencias de medias de 2 poblaciones con varianzas desconocidas
+
+### $` \delta_x^2 `$
+
+```math
+\color{#A98AE4}\Huge \delta_x^2 = \frac{\sum_{i=1}^n {(x_i - \bar x)}^2} {n-1}
+```
 
 ### Varianzas diferentes
 
